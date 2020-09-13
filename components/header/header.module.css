@@ -1,0 +1,97 @@
+.headerContainer {
+    padding: 60px 50px;
+    width: 100%;
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-areas: "Logo . . . . . . Links Links . Shop";
+}
+
+.logo {
+    grid-area: Logo;
+    max-width: 100px;
+}
+
+.links {
+    grid-area: Links;
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.links h6 {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.shopIcon {
+    grid-area: Shop;
+    max-width: 100%;
+    padding-top: 40px;
+}
+
+
+/* Drawings */
+.drawingLogo, 
+.drawingLinks {
+    pointer-events: none;
+    width: 130px;
+    height: 130px;
+    opacity: 0.5;
+    position: absolute;
+    background-size: 1437px 2582px;
+    background-position: -45px -80px;
+}
+
+.drawingLinks {
+    background-position: 532px -80px;
+    height: 90px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .headerContainer {
+        padding: 25px 50px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: "Logo Logo . . . Links . Shop  "
+    }
+}
+@media screen and (max-width: 375px) {
+    .headerContainer {
+        padding: 25px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "Logo Links Links Links"
+        ". Shop Shop Shop";
+    }
+    .logo {
+        max-width: 50px;
+    }
+    .links a {
+        margin-bottom: 10px;
+    }
+    .shopIcon {
+        padding-top: 10px;
+    }
+
+    /* Drawings */
+
+    .drawingLogo,
+    .drawingLinks {
+        width: 80px;
+        height: 80px;
+        background-position: -24px -42px;
+        background-size: 718px 1291px;
+    }
+
+    .drawingLinks { 
+        background-position: 267px -24px;
+    }
+}

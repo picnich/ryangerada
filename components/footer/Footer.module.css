@@ -1,0 +1,85 @@
+.byRyan {
+    grid-area: Ryan;
+}
+.rights {
+    grid-area: Rights;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.rights p {
+    margin-left: 8px;
+}
+.toTop {
+    grid-area: Top;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+}
+.toTop h6 {
+    margin-left: 12px;
+}
+
+.footer {
+    padding-top: 110px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-areas: "Ryan Ryan Ryan . . . . Rights Rights Rights Top";
+}
+
+
+/* Drawings */
+.drawingName, 
+.drawingCopyright,
+.drawingToTop {
+    pointer-events: none;
+    width: 60%;
+    height: 80px;
+    opacity: 0.5;
+    position: absolute;
+    background-size: 100vw 2602px;
+    background-position: -54px -7694px;
+    transform: translate(-10px, -20px);
+}
+
+.drawingCopyright {
+    width: 260px;
+    height: 80px;
+    background-position: 609px -7694px;
+    transform: none;
+}
+
+.drawingToTop {
+    width: 100px;
+    height: 40px;
+    background-position: -1494px -7704px;
+    transform: none;
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: "Ryan Ryan Ryan Ryan Rights Rights Top Top"
+    }
+}
+@media screen and (max-width: 375px) {
+    .footer {
+        padding: 25px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "Top Top Top Top"
+            "Ryan Ryan Ryan Ryan"
+            "Rights Rights Rights Rights";
+    }
+    
+}
+

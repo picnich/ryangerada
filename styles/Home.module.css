@@ -1,10 +1,10 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
+  /* padding: 0 0.5rem; */
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .main {
@@ -14,25 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
 
 .title a {
@@ -52,10 +34,10 @@
   font-size: 4rem;
 }
 
-.title,
+/* .title,
 .description {
   text-align: center;
-}
+} */
 
 .description {
   line-height: 1.5;
@@ -120,4 +102,225 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+/* Homepage Bio */
+.descriptionContainer {
+  width: 100%;
+  padding: 100px 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-areas: "Bio Bio Bio Bio Bio Bio . Cred Cred Cred Cred";
+}
+.bio {
+  grid-area: Bio;
+  font-size: clamp(20px, 3vw, 30px);
+}
+.bio p {
+  margin-bottom: 40px;  
+}
+.bio p strong {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+}
+.credentials {
+  grid-area: Cred;
+  display: flex;
+  justify-content: space-between;
+}
+.credentials .experience *,
+.credentials .contact * {
+  margin-bottom: 20px;
+  /* text-transform: uppercase; */
+}
+
+.credentials .experience p {
+    font-size: 14px;
+  }
+.credentials .contact {
+  text-align: right;
+  font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .descriptionContainer {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+      "Bio Bio Bio Bio Bio Cred Cred Cred"
+  }
+  
+  .credentials {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  .credentials .experience {
+    margin-bottom: 50px;
+  }
+  .credentials .contact {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .descriptionContainer {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-areas: 
+        "Bio Bio Bio Bio Bio Cred Cred Cred"
+    }
+}
+@media screen and (max-width: 375px) {
+  .descriptionContainer {
+      padding: 25px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: 
+          "Bio Bio Bio Bio"
+          "Cred Cred Cred Cred"
+  }
+  
+}
+
+
+
+/* Homepage Projects */
+.workContainer {
+  width: 100%;
+  padding: 100px 50px;
+  
+}
+.project {
+  padding-bottom: 50px;
+  /* overflow: hidden; */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-areas: "Name Name Name Name Name Name . Scope Scope Scope Year";
+}
+
+.projectName {
+  grid-area: Name;
+  display: flex;
+  align-items: baseline;
+}
+@media screen and (max-width: 500px) {
+  .projectName {
+    display: block;
+  }
+}
+
+.projectName h2  {
+  font-size: clamp(40px, 4vw, 60px);
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 90%;
+  font-family: "Heebo";
+}
+.projectName span {
+  font-size: 25px;
+  font-family: "Lora-Regular";
+  font-weight: 400;
+}
+
+.scope {
+  grid-area: Scope;
+}
+.year {
+  text-transform: uppercase;
+  grid-area: Year;
+  text-align: right;
+  align-self: center;
+}
+.floatingImage {
+  max-width: 800px;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background-size: cover;
+  background-position: 50%;
+  top: -300px;
+}
+.floatingImage img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .project {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-areas: 
+        "Name Name Name Name Name Name Name Name"
+        "Scope Scope Scope Scope Scope Scope Scope Year";
+  }
+}
+@media screen and (max-width: 640px) {
+  .workContainer {
+    padding: 25px;
+  }
+  .project {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: 
+        "Name Name Name Name"
+        "Scope Scope Scope Year"
+  }
+  .year {
+    align-self: flex-end;
+  }
+  
+}
+
+
+/* Drawings */
+.drawingBio,
+.drawingExperience,
+.drawingContact,
+.drawingWork {
+  pointer-events: none;
+  width: 60%;
+  height: 430px;
+  opacity: 0.3;
+  position: absolute;
+  background-size: 100vw 2602px;
+  background-position: -54px -434px;
+}
+
+.drawingExperience {
+  width: 230px;
+  height: 220px;
+  background-position: -2724px -464px;
+}
+
+.drawingContact {
+  width: 160px;
+  height: 230px;
+  background-position: -3104px -464px;
+  transform: translateX(-72px);
+}
+
+.drawingWork {
+  width: 97%;
+  background-size: 100vw 2602px;
+  background-position: -50px -1480px;
+  transform: translateY(-40px);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+  .drawingBio {
+    width: 80px;
+    height: 80px;
+    background-position: -24px -42px;
+    background-size: 718px 1291px;
+  }
+
+}
+
+
+.mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background: var(--colour-offwhite);
 }

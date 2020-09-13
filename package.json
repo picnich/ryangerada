@@ -8,8 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^2.6.13",
     "next": "9.5.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-hook-inview": "^4.3.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.4.0"
   }
 }

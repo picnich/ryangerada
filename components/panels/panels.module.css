@@ -1,0 +1,43 @@
+.panelContainer {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.panelLeft {
+    pointer-events: none;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 11;
+}
+
+.panelRight {
+    pointer-events: none;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    z-index: 11;
+}
+
+.panelTrioContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 99vw;
+    height: 100vh;
+    pointer-events: none;
+}
+.panelTrio {
+    width: 100%;
+    height: 33%;
+    border-bottom: 1px solid var(--colour-grey);
+    background: var(--colour-offwhite);
+    pointer-events: none;
+}
