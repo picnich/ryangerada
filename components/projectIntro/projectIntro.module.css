@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    padding: 100px 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-areas: "Bio Bio Bio Bio Bio Bio . Cred Cred . Num";    
+}
+
+
+/* Biography */
+.backArrow {
+    transform: rotate(-90deg);
+    margin-bottom: 40px;
+}
+.bio {
+    grid-area: Bio;
+}
+.bio p {
+    margin-bottom: 24px;
+}
+.projectName {
+    grid-area: Name;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+.projectName h2  {
+    font-weight: 500;
+    line-height: 90%;
+    font-family: "Heebo";
+    margin-right: 4px;
+}
+.projectName span {
+    font-size: 12px;
+    font-family: "Lora-Regular";
+    font-weight: 400;
+}
+.projectDescription {
+    font-size: 25px;
+}
+
+/* Credentials */
+.credentials {
+    grid-area: Cred;
+}
+.credentialContainer {
+    margin-bottom: 40px;
+}
+
+
+/* Number */
+.num {
+    grid-area: Num;
+}

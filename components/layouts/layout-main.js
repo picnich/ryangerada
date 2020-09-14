@@ -7,7 +7,11 @@ const LayoutMain = ({ children }) => {
     return (
         <>
             <Header />
-                <motion.div exit={{ opacity: 0 }}>
+                <motion.div 
+                    initial="initial" 
+                    animate="animate" 
+                    exit={{ opacity: 0 }}
+                >
                     {children}
                 </motion.div>
             <Footer />

@@ -55,28 +55,38 @@ export default function Home() {
 
             </div>
             <div className={styles.credentials}>
-              <div className={styles.experience}>
+              <motion.div 
+                className={styles.experience}
+                variants={stagger}
+                initial="initial"
+                animate="animate"
+              >
                 <div
                     className={styles.drawingExperience}
                     style={{
                         backgroundImage: "url(/illus_work.png)"
                     }}
                 ></div>
-                <h6>Experience</h6>
-                <a href="http://biographydesign.com/splash/"><p>Biography Design</p></a>
-                <p>OCAD University</p>
-              </div>
-              <div className={styles.contact}>
+                <motion.h6 variants={slideUp} transition={{...transition, duraction: 1}}>Experience</motion.h6>
+                <a href="http://biographydesign.com/splash/"><motion.p variants={slideUp} transition={{...transition, duraction: 1}}>Biography Design</motion.p></a>
+                <motion.p variants={slideUp} transition={{...transition, duraction: 1}}>OCAD University</motion.p>
+              </motion.div>
+              <motion.div 
+                className={styles.contact}
+                variants={stagger}
+                initial="initial"
+                animate="animate"
+              >
                 <div
                     className={styles.drawingContact}
                     style={{
                         backgroundImage: "url(/illus_work.png)"
                     }}
                 ></div>
-                <a href=""><h6>Email</h6></a>
-                <a href=""><h6>Instagram</h6></a>
-                <a href=""><h6>Twitter</h6></a>
-              </div>
+                <a href=""><motion.h6 variants={slideUp} transition={{...transition, duraction: 1}}>Email</motion.h6></a>
+                <a href=""><motion.h6 variants={slideUp} transition={{...transition, duraction: 1}}>Instagram</motion.h6></a>
+                <a href=""><motion.h6 variants={slideUp} transition={{...transition, duraction: 1}}>Twitter</motion.h6></a>
+              </motion.div>
             </div>
           </section>
           <section className={styles.workContainer}>

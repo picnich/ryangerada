@@ -1,14 +1,18 @@
 import LayoutMain from '../../components/layouts/layout-main'
 import Head from 'next/head'
+import ProjectIntro from '../../components/projectIntro/projectIntro'
 
 const Frank = () => {
     return (
         <>
             <Head>
-                <title>Anony | Ryan Gerada</title>
+                <title>Frank | Ryan Gerada</title>
             </Head>
             <LayoutMain>
-                <h1>This is the Frank Project</h1>
+                <ProjectIntro
+                    project="Frank"
+                    market="We Make Windows & Doors"
+                ></ProjectIntro>
             </LayoutMain>
         </>
     )
