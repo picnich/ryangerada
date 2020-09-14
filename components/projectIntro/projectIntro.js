@@ -18,6 +18,12 @@ const ProjectIntro = ({project, market, children}) => {
                 <div className={styles.projectDescription}>{children}</div>
             </div>
             <div className={styles.credentials}>
+                <div
+                    className={styles.drawingTeam}
+                    style={{
+                        backgroundImage: "url(/illus_bio.png)"
+                    }}
+                ></div>
                 <div className={styles.credentialContainer}>
                     <h6>Team</h6>
                 </div>

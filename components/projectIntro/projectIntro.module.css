@@ -7,7 +7,6 @@
     grid-template-areas: "Bio Bio Bio Bio Bio Bio . Cred Cred . Num";    
 }
 
-
 /* Biography */
 .backArrow {
     transform: rotate(-90deg);
@@ -54,3 +53,53 @@
 .num {
     grid-area: Num;
 }
+
+
+/* Drawing */
+.drawingTeam {
+  pointer-events: none;
+  width: 212px;
+  height: 122px;
+  opacity: 0.3;
+  position: absolute;
+  /* background-size: 100vw 2602px;
+  background-position: -54px -434px; */
+}
+
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 1080px) {
+    .container {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-areas: 
+        "Bio Bio Bio Bio Bio Cred Cred Cred"
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: 
+          "Bio Bio Bio Bio Bio Cred Cred Cred"
+        }
+        .projectDescription {
+            font-size: 22px;
+        }
+  }
+@media screen and (max-width: 540px) {
+    .container {
+        padding: 25px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "Bio Bio Bio Bio"
+            "Cred Cred Cred Cred"
+            " Num . . . "
+    }
+
+    .projectDescription {
+        font-size: 20px;
+    }
+    
+  }
