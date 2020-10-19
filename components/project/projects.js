@@ -5,7 +5,8 @@ const Projects = [
       scope: "Brand Development, Marketing. ",
       role: "Designer",
       year: "2019",
-      link: "anony"
+      link: "anony",
+      published: true
     },
     {
         name: "Club 320",
@@ -13,7 +14,8 @@ const Projects = [
         scope: "Concept, Artwork, Branding. ",
         role: "Designer",
         year: "2020",
-        link: "club-320"
+        link: "club-320",
+        published: true
     },
     {
         name: "VAD",
@@ -21,7 +23,8 @@ const Projects = [
         scope: "Concept, Asset Acquisition, Art.",
         role: "Designer",
         year: "2017",
-        link: "visualizing-auditory-distraction"
+        link: "visualizing-auditory-distraction",
+        published: true
     },
     {
         name: "Frank",
@@ -29,7 +32,8 @@ const Projects = [
         scope: "Brand Development, Marketing. ",
         role: "Designer",
         year: "2020",
-        link: "frank"
+        link: "frank",
+        published: false
     },
     {
         name: "Real Sports",
@@ -37,7 +41,8 @@ const Projects = [
         scope: "Brand Development, Rebranding.",
         role: "Designer",
         year: "2020",
-        link: "real-sports"
+        link: "real-sports",
+        published: false
     },
     {
       name: "LPD",
@@ -45,7 +50,8 @@ const Projects = [
       scope: "Brand Development, Rebranding.",
       role: "Designer",
       year: "2020",
-      link: "little-project-on-dundas"
+      link: "little-project-on-dundas",
+      published: false
     }
   ]
 

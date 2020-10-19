@@ -10,17 +10,23 @@
 .rights p {
     margin-left: 8px;
 }
+.nextProj,
 .toTop {
     grid-area: Top;
     cursor: pointer;
     display: flex;
     align-items: baseline;
+    z-index: 1;
+}
+.nextProj img{
+    transform: rotate(90deg);
 }
 .toTop h6 {
     margin-left: 12px;
 }
 
 .footer {
+    z-index: 2;
     padding-top: 110px;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -71,7 +77,7 @@
         grid-template-areas: "Ryan Ryan Ryan Ryan Rights Rights Top Top"
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
     .footer {
         padding: 25px;
         grid-template-columns: repeat(4, 1fr);
@@ -83,3 +89,24 @@
     
 }
 
+.drawingToTop,
+.drawingCopyright,
+.drawingName {
+    position: absolute;
+    pointer-events: none;
+    max-width: 240px;
+}
+
+.drawingName img {
+    width: 100%;
+}
+
+.drawingCopyright {
+    max-width: 227px;
+    transform: translate(-20px, 0px);
+}
+
+.drawingToTop {
+    max-width: 123px;
+    transform: translate(-20px, -20px);
+}

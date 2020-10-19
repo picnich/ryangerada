@@ -1,12 +1,24 @@
+import { useEffect, useRef } from "react"
 import styles from "./projectIntro.module.css"
 import Link from 'next/link'
+import { homeTextIntro } from "../../lib/animations/animations"
+import RevealText from "../animated/revealText"
 
+const ProjectIntro = ({
+    project, 
+    market, 
+    projectNumber, 
+    year,
+    clientName,
+    role,
+    description,
+    children
+}) => {
 
-const ProjectIntro = ({project, market, children}) => {
     return (
         <section className={styles.container}>
             <div className={styles.bio}>
-                <Link  href={"/"}>
+                <Link  href={"/"}  >
                     <a>
                         <img src="/icons/icon-arrow-top.svg" alt="Arrow Icon" className={styles.backArrow}/>    
                     </a>
@@ -15,7 +27,7 @@ const ProjectIntro = ({project, market, children}) => {
                     <h2>{project} /</h2>
                     <span>{market}</span>
                 </div>
-                <div className={styles.projectDescription}>{children}</div>
+                <div className={styles.projectDescription}>{description.map((para,i) => <p key={i}>{para}</p>)}</div>
             </div>
             <div className={styles.credentials}>
                 <div
@@ -24,25 +36,21 @@ const ProjectIntro = ({project, market, children}) => {
                         backgroundImage: "url(/illus_bio.png)"
                     }}
                 ></div>
+                <div className={styles.num}>{projectNumber}</div>
                 <div className={styles.credentialContainer}>
-                    <h6>Team</h6>
+                    <h6>Year</h6>
+                    <p>{year}</p>
                 </div>
                 <div className={styles.credentialContainer}>
-                    <h6>Creative Director</h6>
-                    <p>Marlo Onilla</p>
+                    <h6>Client Name</h6>
+                    <p>{clientName}</p>
                 </div>
                 <div className={styles.credentialContainer}>
-                    <h6>Design lead</h6>
-                    <p>Ryan Gerada</p>
-                </div>
-                <div className={styles.credentialContainer}>
-                    <h6>Photography</h6>
-                    <p>Scott Norsworthy</p>
-                    <p>Ryan Gerada</p>
+                    <h6>Role</h6>
+                    <p>{role}</p>
                 </div>
             </div>
 
-            <div className={styles.num}>01</div>
         </section>
     )
 }

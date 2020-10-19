@@ -111,7 +111,8 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-areas: "Bio Bio Bio Bio Bio Bio . Cred Cred Cred Cred";
+  grid-template-areas: 
+    "Bio Bio Bio Bio Bio Bio . Cred Cred Cred Cred";
 }
 .bio {
   grid-area: Bio;
@@ -120,28 +121,49 @@
 .bio p {
   margin-bottom: 40px;  
 }
-.bio p strong {
-  font-family: "Heebo", sans-serif;
+.bio p span {
+  font-family: "Heebo500", sans-serif;
   font-weight: 500;
+  display: inline-block;
 }
 .credentials {
   grid-area: Cred;
   display: flex;
-  justify-content: space-between;
-}
-.credentials .experience *,
-.credentials .contact * {
-  margin-bottom: 20px;
-  /* text-transform: uppercase; */
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
-.credentials .experience p {
-    font-size: 14px;
-  }
+.credentials .experience, 
 .credentials .contact {
-  text-align: right;
-  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1200px) {
+  .credentials .experience, 
+  .credentials .contact {
+    flex-direction: column;
+  }
+}
+
+.credentials .experience h6, 
+.credentials .contact h6 {
+  margin-right: 20px;
+  min-width: 80px;
+}
+
+
+/* .credentials .experience p {
+    font-size: 14px;
+  } */
+
+  .credentials p,
+  .credentials a {
+    font-size: clamp(18px, 3vw, 30px);
+  }
+  
+
 
 
 
@@ -172,7 +194,7 @@
         "Bio Bio Bio Bio Bio Cred Cred Cred"
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .descriptionContainer {
       padding: 25px;
       grid-template-columns: repeat(4, 1fr);
@@ -204,10 +226,11 @@
   grid-area: Name;
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   .projectName {
-    display: block;
+    flex-direction: column;
   }
 }
 
@@ -216,7 +239,7 @@
   text-transform: uppercase;
   font-weight: 500;
   line-height: 90%;
-  font-family: "Heebo";
+  font-family: "Heebo500", sans-serif;
 }
 .projectName span {
   font-size: 25px;
@@ -232,6 +255,9 @@
   grid-area: Year;
   text-align: right;
   align-self: center;
+}
+.floatingImg {
+  max-width: 400px;
 }
 .floatingImage {
   max-width: 800px;
@@ -272,48 +298,74 @@
 
 
 /* Drawings */
-.drawingBio,
+/* .drawingBio, */
 .drawingExperience,
-.drawingContact,
-.drawingWork {
+.drawingContact{
   pointer-events: none;
   width: 60%;
   height: 430px;
   opacity: 0.3;
   position: absolute;
-  background-size: 100vw 2602px;
+  background-size: 1437px 2582px;
   background-position: -54px -434px;
 }
+/* .drawingBio {
+  background-size: 1590px 2582px;
+  transform: translateY(-20px);
+  width: 50%;
+} */
 
-.drawingExperience {
-  width: 230px;
-  height: 220px;
-  background-position: -2724px -464px;
+
+/* Drawing Biography */
+.drawingBiography {
+  opacity: 0.3;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-10px, -10px);
+}
+.drawingBiography img {
+  width: 100%;
+}
+@media screen and (min-width: 540px) {
+  .drawingBiography { 
+    max-width: 56%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .drawingBiography { 
+    transform: translate(-10px, -30px);
+  }
 }
 
+/* Drawing Contact */
 .drawingContact {
-  width: 160px;
-  height: 230px;
-  background-position: -3104px -464px;
-  transform: translateX(-72px);
+  overflow: hidden;
+}
+/* .drawingContact img {
+  height: 100%;
+} */
+
+@media screen and (min-width: 540px) {
+  .drawingContact {
+    max-width: 20%;
+  }
 }
 
 .drawingWork {
-  width: 97%;
-  background-size: 100vw 2602px;
-  background-position: -50px -1480px;
-  transform: translateY(-40px);
-  background-repeat: no-repeat;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.3;
+  transform: translate(-20px, -40px);
+  display: none;
 }
-
-@media screen and (max-width: 375px) {
-  .drawingBio {
-    width: 80px;
-    height: 80px;
-    background-position: -24px -42px;
-    background-size: 718px 1291px;
+.drawingWork img {
+  width: 100%;
+}
+@media screen and (min-width: 720px){
+  .drawingWork {
+    display: block;
+    width: 97%;
   }
-
 }
 
 
@@ -322,5 +374,5 @@
   height: 100%;
   top: 0;
   position: absolute;
-  background: var(--colour-offwhite);
+  background: var(--colour-grainwhite);
 }

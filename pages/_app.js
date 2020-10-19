@@ -3,6 +3,8 @@ import App from "next/app";
 import { AnimatePresence } from "framer-motion";
 import '../styles/globals.css'
 
+import Grain from "../components/layouts/grain";
+
 class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props;
@@ -11,9 +13,12 @@ class MyApp extends App {
     // router.route returns the route your component lives on. So in our case it will be '/' or '/products/[id]'
     // exitBeforeEnter: AnimatePresence will only render one component at a time. The exiting component will finished its exit animation before the entering component is rendered
     return (
+      <>
+      <Grain />
       <AnimatePresence exitBeforeEnter>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
+      </>
     );
   }
 }

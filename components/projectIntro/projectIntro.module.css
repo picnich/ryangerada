@@ -4,13 +4,21 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-areas: "Bio Bio Bio Bio Bio Bio . Cred Cred . Num";    
+    grid-template-areas: 
+        "Back Back Back Back Back Back Back Back Back Back Back "
+        "Bio Bio Bio Bio Bio Bio . Cred Cred Cred Cred"
+        ;    
+}
+.wrapper {
+    width: 100%;
+    padding: 100px
 }
 
 /* Biography */
 .backArrow {
     transform: rotate(-90deg);
     margin-bottom: 40px;
+    grid-area: Back;
 }
 .bio {
     grid-area: Bio;
@@ -45,13 +53,34 @@
     grid-area: Cred;
 }
 .credentialContainer {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1200px) {
+    .credentialContainer {
+      flex-direction: column;
+    }
+}
+.credentialContainer h6 {
+  margin-right: 20px;
+  min-width: 100px;
+}
+.credentialContainer P {
+    font-size: clamp(18px, 3vw, 30px);
+    line-height: 1.2;
+}
+  
 
 
 /* Number */
 .num {
-    grid-area: Num;
+    font-size: 12px;
+    margin-top: 48px;
+    margin-bottom: 36px;
+    padding-top: 16px;
 }
 
 

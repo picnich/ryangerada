@@ -6,30 +6,25 @@ const Footer = () => {
      };
     return (
         <footer className={styles.footer}>
-            <div
-                className={styles.drawingName}
-                style={{
-                    backgroundImage: "url(/illus_work.png)"
-                }}
-            ></div>
-            <h6 className={styles.byRyan}>DESIGN, RYAN GERADA</h6>
+            <div className={styles.byRyan}>
+                <div className={styles.drawingName}>
+                    <img src={'/illustrations/illus_work-name.png'}></img>
+                </div>
+                <h6>DESIGN, RYAN GERADA</h6>
+            </div>
+
             <div className={styles.rights}>
-                <div
-                    className={styles.drawingCopyright}
-                    style={{
-                        backgroundImage: "url(/illus_work.png)"
-                    }}
-                ></div>
+                <div className={styles.drawingCopyright}>
+                    <img src={'/illustrations/illus_work-copyright.png'}></img>
+                </div>
+
                 <img src="/icons/icon-copyright.svg" alt="Arrow Icon"/>
                 <p>2020 All Rights Reserved.</p>
             </div>
             <a className={styles.toTop} onClick={scrollTop}>
-                <div
-                    className={styles.drawingToTop}
-                    style={{
-                        backgroundImage: "url(/illus_work.png)"
-                    }}
-                ></div>
+                <div className={styles.drawingToTop}>
+                    <img src={'/illustrations/illus_work-top.png'}></img>
+                </div>
                 <img src="/icons/icon-arrow-top.svg" alt="Arrow Icon"/>
                 <h6>To Top</h6>
             </a>

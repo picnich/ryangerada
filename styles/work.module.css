@@ -1,0 +1,131 @@
+.workGrid {
+    /* background: red; */
+    padding: 25px;
+    width: 100%;
+    
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 540px) {
+    .workGrid {
+        grid-template-columns: repeat(8, 1fr);
+        padding: 25px 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .workGrid {
+        padding: 60px 50px;
+        grid-template-columns: repeat(11, 1fr);
+        grid-gap: 80px 20px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .workGrid {
+        grid-gap: 160px 20px;
+    }
+}
+
+
+
+/* ANONY */
+.image1, 
+.image2,
+.image3, 
+.image4 {
+    max-width: 100%;
+}
+.col_8_11 {
+    grid-column: 1 / -1;
+}
+
+.col_4 {
+    grid-column: 1 / 5;
+}
+.anony_img2 {
+    grid-column: 6 / -1;
+    max-width: 100%;
+}
+.projDescription { 
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    grid-column: 1 / -1;
+}
+.projDescription p {
+    font-size: 12px;
+    line-height: 2;
+
+}
+
+
+@media screen and (min-width: 540px) {
+    .projDescription {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 25px 50px;
+    }
+
+    .image1 {
+        grid-column: 2 / -1;
+    }
+    /* .projDescription {
+        grid-column: 4 / -1;
+    }
+    .projDescription h6 {
+        margin-bottom: 25px;
+        margin-top: 60px;
+    } */
+    .image2 {
+        grid-column: 1 / -1;
+    }
+    .image3 {
+        grid-column: 1 / -1;
+    }
+    .image4 {
+        grid-column: 1 / -1;
+    }
+}
+@media screen and (min-width: 768px) {
+    .image1 {
+        grid-column: 4 / -1;
+    }
+    /* .projDescription {
+        grid-column: 8 / -1;
+    }
+    .projDescription h6 {
+        margin-bottom: 25px;
+        margin-top: 100px;
+    } */
+    .image2 {
+        grid-column: 1 / 7;
+    }
+    .image3 {
+        margin-top: -200px;
+        grid-column: 4 / -1;
+    }
+    .image4 {
+        grid-column: 1 / 9;
+    }
+    .col_8_11 {
+        grid-column: 2 / -2;
+    }
+    
+
+}
+
+.fullImage {
+    grid-column: 1 / -1;
+}
+.fullImage {
+    max-width: 100%;
+}
+
+/* iPad Border */
+.image1, 
+.image4 {
+    border: 10px solid #434343;
+    border-radius:  40px;
+    overflow: hidden;
+}

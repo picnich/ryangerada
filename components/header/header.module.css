@@ -1,11 +1,12 @@
 .headerContainer {
     padding: 60px 50px;
     width: 100%;
+    z-index: 2;
     
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-areas: "Logo . . . . . . Links Links . Shop";
+    grid-template-areas: "Logo . . . . . . Links Links Links Links";
 }
 
 .logo {
@@ -63,7 +64,7 @@
         grid-template-areas: "Logo Logo . . . Links . Shop  "
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
     .headerContainer {
         padding: 25px;
         grid-template-columns: repeat(1, 1fr);
