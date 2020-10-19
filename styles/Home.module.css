@@ -106,6 +106,7 @@
 
 /* Homepage Bio */
 .descriptionContainer {
+  z-index: 2;
   width: 100%;
   padding: 100px 50px;
   display: grid;
@@ -209,6 +210,7 @@
 
 /* Homepage Projects */
 .workContainer {
+  z-index: 0;
   width: 100%;
   padding: 100px 50px;
   
