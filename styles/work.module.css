@@ -48,13 +48,16 @@
 .col_8_11, 
 .anony_img2 {
     max-width: 100%;
-    grid-column: span 4;
+    grid-column: 1 / -1;
 }
 
+.projDescription h6 { 
+    margin-bottom: 24px;
+}
 .projDescription p {
     font-size: 12px;
     line-height: 2;
-
+    margin-bottom: 24px
 } 
 
 
@@ -77,7 +80,7 @@
         grid-column: 1 / -1;
     }
     .projDescription {
-        grid-column: span 8;
+        grid-column: 1 / -1;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(3, 1fr);
@@ -110,7 +113,7 @@
         grid-column: 2 / -2;
     }
     .projDescription {
-        grid-column: span 11;
+        /* grid-column: 1 / -1; */
         grid-gap: 40px;
 
     }
