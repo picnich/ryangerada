@@ -121,9 +121,6 @@ const Anony = () => {
                         />
                     </div>
                     
-                    {/* <img 
-                        className={styles.fullImage}
-                        src={'/work/anony/stillforfigma 3.png'}></img> */}
                     <div className={styles.image4}>
                         <VideoContainer 
                             mp4={data.media.video4.mp4}
@@ -142,20 +139,6 @@ const Anony = () => {
                         className={styles.anony_img2}
                         src={data.media.image2}></img>
                 </div>
-                {/* <img 
-                    className={styles.fullImage}
-                    src={'/work/anony/fullwidth-1.png'}></img>
-                <div className={styles.workGrid}>
-                    <img 
-                        className={styles.fullImage}
-                        src={'/work/anony/image7.png'}></img>
-                    <img 
-                        className={styles.fullImage}
-                        src={'/work/anony/export1 1.png'}></img>
-                    <img 
-                        className={styles.fullImage}
-                        src={'/work/anony/stationary-1.png'}></img>
-                </div> */}
 
             </LayoutMain>
         </>
