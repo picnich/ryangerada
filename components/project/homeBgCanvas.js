@@ -26,7 +26,7 @@ const HomeBGCanvas = ({ num, isHovering }) => {
 
     const data = [
         {
-            url: "/work/anony/hoverstate-anony.png",
+            url: "/work/anony/hoverstate-anony 2.png",
             alt: "Anony Hover Image",
             ref: hoverAnony
         },
