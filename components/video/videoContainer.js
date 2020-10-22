@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react"
+import { useRef } from "react"
 
 const VideoContainer = ({mp4, ogg, webm, c }) => {
     const videoRef = useRef(null);

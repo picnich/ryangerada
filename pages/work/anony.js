@@ -40,7 +40,13 @@ const data = {
             ogg: "/work/anony/anony_gif_4.ogg",
             webm: "/work/anony/anony_gif_4.webm"
         },
-        image2: "/work/anony/export1 1.png"
+        image2: "/work/anony/export1 1.png",
+        process: [
+            "/work/anony/Process_01.png",
+            "/work/anony/Process_02.png",
+            "/work/anony/Process_03.png",
+            "/work/anony/Process_04.png"
+        ]
     },
 }
 
@@ -99,9 +105,17 @@ const Anony = () => {
                     <img 
                         className={styles.image2}
                         src={'/work/anony/Horizon Sketches.png'}></img>
-                    <img 
-                        className={styles.image3}
-                        src={'/work/anony/image3.png'}></img>
+                    <div className={styles.processContainer}>
+                        <div>
+                            <div></div>
+                            <p>Process Photography</p>
+                            <span>2019</span>
+                        </div>
+                        {
+                            data.media.process.map((pro, i) =>  (
+                                <img key={i} src={pro}></img>) )
+                        }
+                    </div>
 
                     <div 
                     ref={ el => textRef1 = el}
