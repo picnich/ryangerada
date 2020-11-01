@@ -3,6 +3,10 @@ import LayoutMain from '../../components/layouts/layout-main'
 import Head from 'next/head'
 import ProjectIntro from '../../components/projectIntro/projectIntro'
 
+import styles from "../../styles/work.module.css"
+import VideoContainer from '../../components/video/videoContainer'
+import { scrollerTextAnim } from "../../lib/animations/animations"
+
 const data = {
     projectName: "Anony",
     market: "Lighting & Product Design",
@@ -50,9 +54,6 @@ const data = {
     },
 }
 
-import styles from "../../styles/work.module.css"
-import VideoContainer from '../../components/video/videoContainer'
-import { scrollerTextAnim } from "../../lib/animations/animations"
 
 
 const Anony = () => {
@@ -80,7 +81,8 @@ const Anony = () => {
                 
                 />
                 <div className={styles.workGrid}>
-                    <div className={styles.image1}>
+                    <div 
+                    className={`${styles.image1} ${styles.ipadBorder}`}>
                         <VideoContainer 
                             mp4={data.media.video1.mp4}
                             ogg={data.media.video1.ogg}
@@ -135,7 +137,7 @@ const Anony = () => {
                         />
                     </div>
                     
-                    <div className={styles.image4}>
+                    <div className={`${styles.image4} ${styles.ipadBorder}`}>
                         <VideoContainer 
                             mp4={data.media.video4.mp4}
                             ogg={data.media.video4.ogg}
