@@ -429,7 +429,7 @@
 
 }
 .vadProcess_container img:first-child {
-    grid-column: 1 span 1;
+    grid-column: 1 / 2;
 }
 .vadProcess_container img:last-child {
     grid-column: 2/-1;
