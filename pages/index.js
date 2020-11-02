@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import Head from 'next/head'
 import { motion } from "framer-motion"
 
