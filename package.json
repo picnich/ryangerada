@@ -10,7 +10,7 @@
   "dependencies": {
     "framer-motion": "^2.6.13",
     "gsap": "file:gsap-bonus.tgz",
-    "next": "9.5.1",
+    "next": "^10.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hook-inview": "^4.3.0"

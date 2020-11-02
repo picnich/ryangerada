@@ -8,7 +8,8 @@ const FooterWork = ({ nextProject = "/" }) => {
                 <div className={styles.drawingName}>
                     <img src={'/illustrations/illus_work-name.png'}></img>
                 </div>
-                <h6>DESIGN, RYAN GERADA</h6>
+                {/* <h6>DESIGN, RYAN GERADA</h6> */}
+                <h6>LAST UPDATED: OCT 18, 10:26PM</h6>
             </div>
 
             <div className={styles.rights}>
