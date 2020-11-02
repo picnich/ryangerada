@@ -8,7 +8,7 @@ import AllWork from '../components/project/AllWork'
 
 
 import { stagger, slideUp, transition, homeTextIntro } from "../lib/animations/animations"
-import HomeBGCanvas from "../components/project/homeBgCanvas"
+// import HomeBGCanvas from "../components/project/homeBgCanvas"
 
 export default function Home() {
   let bio1 = useRef(null);
