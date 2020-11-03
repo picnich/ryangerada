@@ -10,7 +10,7 @@ import { scrollerTextAnim } from "../../lib/animations/animations"
 const data = {
     projectName: "Club Spotify",
     market: "Reimagining Club Culture",
-    projectNumber: "02",
+    projectNumber: "03",
     year: 2020,
     clientName: "Personal Project",
     role: "Lead Designer",

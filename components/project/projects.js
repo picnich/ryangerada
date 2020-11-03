@@ -9,21 +9,21 @@ const Projects = [
       published: true
     },
     {
-        name: "Club 320",
-        market: "Reimagining Club Culture",
-        scope: "Concept, Artwork, Branding. ",
-        role: "Designer",
-        year: "2020",
-        link: "club-320",
-        published: true
-    },
-    {
         name: "VAD",
         market: "Visual Auditory Distraction",
         scope: "Concept, Asset Acquisition, Art.",
         role: "Designer",
         year: "2017",
         link: "visualizing-auditory-distraction",
+        published: true
+    },
+    {
+        name: "Club 320",
+        market: "Reimagining Club Culture",
+        scope: "Concept, Artwork, Branding. ",
+        role: "Designer",
+        year: "2020",
+        link: "club-320",
         published: true
     },
     {

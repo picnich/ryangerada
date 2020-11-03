@@ -7,8 +7,8 @@ import styles from "../../styles/Grain.module.css"
 let viewWidth, viewHeight, ctx
 
 let size = {
-    w: 500,
-    h: 333
+    w: 600,
+    h: 400
 };
 
 const HomeBGCanvas = ({ num, isHovering }) => {
@@ -21,6 +21,7 @@ const HomeBGCanvas = ({ num, isHovering }) => {
     const hoverLPD = useRef(null)
     const hoverRealSports = useRef(null)
     const hoverVAD = useRef(null)
+    const hoverComingSoon = useRef(null)
 
     const [ locations, setLocations ] = useState([])
 
@@ -55,6 +56,11 @@ const HomeBGCanvas = ({ num, isHovering }) => {
             alt: "VAD Hover Image",
             ref: hoverVAD
         },
+        {
+            url: "/work/frank/hoverstate-comingsoon.png",
+            alt: "Coming Soon Hover Image",
+            ref: hoverComingSoon
+        },
     ]
     
     
@@ -78,23 +84,23 @@ const HomeBGCanvas = ({ num, isHovering }) => {
 
                     break;
                 case 1:
+                    ctx.drawImage(hoverVAD.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
+                    
+                    break;
+                case 2:
                     ctx.drawImage(hoverClub320.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
 
                 break;
-                case 2:
-                    ctx.drawImage(hoverVAD.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
-
-                break;
                 case 3:
-                    ctx.drawImage(hoverFrank.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
+                    ctx.drawImage(hoverComingSoon.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
 
                 break;
                 case 4:
-                    ctx.drawImage(hoverRealSports.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
+                    ctx.drawImage(hoverComingSoon.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
 
                 break;
                 case 5:
-                    ctx.drawImage(hoverLPD.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
+                    ctx.drawImage(hoverComingSoon.current, x - (size.w /2) , y - (size.h /2), size.w, size.h);
 
                 break;
                 default:

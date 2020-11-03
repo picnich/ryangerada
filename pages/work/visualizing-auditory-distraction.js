@@ -13,7 +13,7 @@ import VadClosing from "../../components/project/vadclosing"
 const data = {
     projectName: "Visualizing Auditory Distraction",
     market: "A Case Study",
-    projectNumber: "03",
+    projectNumber: "02",
     year: 2017,
     clientName: "OCAD Graphic Design",
     role: "Lead Designer",
