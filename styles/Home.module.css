@@ -153,6 +153,14 @@
   margin-right: 20px;
   min-width: 80px;
 }
+.credentials a span {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.credentials a span:hover {
+  opacity: 0.5;
+}
 
 
 /* .credentials .experience p {

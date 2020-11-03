@@ -27,13 +27,13 @@ function Credentials() {
             animate="animate"
           >
             <motion.a 
-              href=""
+              href="https://www.instagram.com/ryangerada/"
               variants={slideUp} 
               transition={{...transition, duration: 1}}
             >
               <span>Instagram, </span></motion.a>
             <motion.a 
-              href=""
+              href="https://twitter.com/ryangerada"
               variants={slideUp} 
               transition={{...transition, duration: 1}}
             >
