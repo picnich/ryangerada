@@ -18,9 +18,9 @@ const data = {
     clientName: "OCAD Graphic Design",
     role: "Lead Designer",
     description: [
-        "VAD was my graduate project at OCAD. Four year designers are given an opportunity to spend two full semesters focusing on a subject of their  choice. I took a particular interest in distraction, as it is something that often impacts me personally. Distraction as a topic would have been too broad, instead I narrowed the focus down to environmental and auditory distraction.",
+        "VAD was my graduate project at OCAD. Forth year designers are given an opportunity to spend two full semesters focusing on a subject of their  choice. I took a particular interest in distraction, as it is something that often impacts me personally. Distraction as a topic would have been too broad, instead I narrowed the focus down to environmental and auditory distraction.",
         "Research was the first leg of the project, where I found myself particularly interested in the work of acoustic ecologists. Acoustic ecology, sometimes called ecoacoustics or soundscape studies, is a discipline studying the relationship, mediated through sound, between human beings and their environment.",
-        "In tandem with broad research on the subject of auditory distraction, I narrowed my focus to three environments where I would begin collecting data. This data would be portrayed in a variety of deliverables. These include brand identity, digital implementation, print collateral, experience design."
+        "In tandem with broad research on the subject of auditory distraction, I narrowed my focus to three environments that I most frequently found myself working in. I began the process by familiarizing myself with the setting. Then I would proceed to record the 10 most reoccurring sounds in the workplace. This collected data would be utilized in a variety of deliverables. These include brand identity, digital implementation, print collateral, experience design."
     ],
     media: {
         image1: "/work/vad/vad-image-01.png",
@@ -127,9 +127,9 @@ const VisualizingAuditoryDistraction = () => {
                     className={styles.projDescription}>
                         <h6>01 COFFEE SHOP</h6>
 
-                        <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows.</p>
+                        <p>Jimmy’s Coffee is housed within a repurposed victorian home, north of Dundas on McCaul street in Toronto. My initial observations of the space made it clear that Jimmy's Coffee is home to a wide array of guests.</p>
 
-                        <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows.  </p>
+                        <p>Ranging from locals from the surrounding neighborhoods, off duty hospital staff, and university students. Each of these demographics interacted with the space uniquely. This diversity resulted in a space that was dynamic, exciting, and distracting.</p>
                     </div>
 
                     <img src={data.media.image2} className={`${styles.vad_image2} ${styles.ipadBorder}`}/>
@@ -138,9 +138,9 @@ const VisualizingAuditoryDistraction = () => {
                     className={styles.projDescription}>
                         <h6>02 REFERENCE LIBRARY.</h6>
 
-                        <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows.</p>
+                        <p>The Toronto Reference Library is the largest of the three spaces studied for this project. The vast amount of space allowed for a lot of flexibility when choosing the locations in which I would set up my recording equipment. It also required a slightly different approach in comparison to the coffee shop or home studio.</p>
 
-                        <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows. </p>
+                        <p> I took the time to calibrate myself within the library, observing how and where guests interacted with the space. These observations lead me to record on each of the library's five floors, as each of them offered unique acoustic or environmental elements. </p>
                     </div>
 
                     <img src={data.media.image3} className={`${styles.vad_image3} ${styles.ipadBorder}`}/>
@@ -150,9 +150,9 @@ const VisualizingAuditoryDistraction = () => {
                     className={styles.projDescription}>
                         <h6>03 Home Studio</h6>
 
-                        <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows.</p>
+                        <p>The third space is my private home studio. This space serves multiple functions, it doubles as a bedroom and office space. This room is one of two bedrooms in a downtown Toronto apartment. </p>
 
-                        <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows. </p>
+                        <p>This 700 square foot apartment is shared with a roommate, which is commonly the source of a majority of the jarring sound. The unit also looks out into a private courtyard. </p>
                     </div>
 
 
@@ -173,9 +173,9 @@ const VisualizingAuditoryDistraction = () => {
                         className={styles.projDescription}>
                             <h6>01 COFFEE SHOP</h6>
 
-                            <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows.</p>
+                            <p>The space is divided in half, with the front playing host to the baristas and their workstation, while the back functions as a communal workspace for guests. Upon entering the space, you are immediately greeted by the baristas behind the counter to your right. Moving toward the back of the space, you are presented with a large communal table, often hosting 4 guests, as well as multiple single seat options to your left. </p>
 
-                            <p>We went in and developed product specific newsprint to be included in various places. These would double as product instructions, as the back had home installation instructions. These newsprints would be included with the product upon purchase, handed out as informational brochures at trade shows. </p>
+                            <p>The purposes of my research and sound collection lead me to set up my microphone in each corner of the designated workspace as a control to ensure consistent data collection.</p>
                         </div>
                     </VadLocationWrapper>
                     <VadLocationWrapper 
@@ -189,9 +189,9 @@ const VisualizingAuditoryDistraction = () => {
                         className={styles.projDescription}>
                             <h6>02 REFERENCE LIBRARY</h6>
 
-                            <p>Each of the five floors have a similar layout. Book cataloguing takes place on the east and west wings of the floor. The north side is generally dedicated to communal tables that are used as a public workspace. Lastly, the south side hosts library staff and floor specific equipment or archives.</p>
+                            <p>Each of the five floors have a similar layout. Book cataloguing takes place on the east and west wings of the floor. The north side is generally dedicated to communal tables that are used as a public workspace. Lastly, the south side hosts library staff and floor specific equipment or archives. </p>
 
-                            <p>Each of the five floors have lofty 20 foot ceilings, with a large portion of the centre of the library having no ceiling at all until you reach the roof. Concrete floors are covered with heavy carpet, these carpets help to suppress some of the sound echoing throughout the cacophonous space. A ruckus on the first floor bleeds to the furthest reaches of the fifth floor, and vice versa. </p>
+                            <p>Each of the five floors have lofty 20 foot ceilings, with a large portion of the centre of the library having no ceiling at all until you reach the roof. Concrete floors are covered with heavy carpet, these carpets help to suppress some of the sound echoing throughout the cacophonous space. A ruckus on the first floor bleeds to the furthest reaches of the fifth floor, and vice versa.</p>
                         </div>
                     </VadLocationWrapper>
                     <VadLocationWrapper 
@@ -205,7 +205,7 @@ const VisualizingAuditoryDistraction = () => {
                         className={styles.projDescription}>
                             <h6>03 HOME STUDIO</h6>
 
-                            <p>The studio space itself is a 150 square foot room, roughly cut down the middle. The desk and working space occupy the near side of the room, while the bed rests against the far wall.</p>
+                            <p>The studio space itself is a 150 square foot room, roughly cut down the middle. The desk and working space occupy the near side of the room, while the bed rests against the far wall. </p>
 
                             <p>With 8 foot concrete ceilings, and robust concrete floors, the space is acoustically sound. There is little to no sound from neighbors. All of the data collection was gathered when sitting at my workspace.</p>
                         </div>
@@ -227,7 +227,7 @@ const VisualizingAuditoryDistraction = () => {
                     className={styles.projDescription}>
                         <h6>SPECBOOKS</h6>
 
-                        <p>The Spectrogram Handbooks were designed to catalog the collection of data for all three spaces. One book was designed and printed for each space, containing the entirety of collected data. These data were visualized in the form of a spectrogram - a visual representation of the spectrum of frequencies of a signal as it varies with time. These books also acted as a short tutorial for the viewer, who may have been unfamiliar with this form of audio visualization. After a brief introduction to the project, the space, and the visualization, the cataloging was presented.</p>
+                        <p>The Spectrogram Handbooks were designed to catalog the collection of data for all three spaces. One book was designed and printed for each space, containing the entirety of collected data. These data were visualized in the form of a spectrogram - a visual representation of the spectrum of frequencies of a signal as it varies with time. These books also acted as a short tutorial for the viewer, who may have been unfamiliar with this form of audio visualization. After a brief introduction to the project, the space, and the visualization, the cataloging was presented. </p>
 
                         <p>Having these printed was particularly important because of the exhibition in which this work was intended to be displayed. The books were intended to be picked up by the observer and held in hand while observing the corresponding poster that contained a more stylized visualization of the sounds.</p>
                     </div>
@@ -267,7 +267,7 @@ const VisualizingAuditoryDistraction = () => {
                     <div 
                     ref={ el => textRef2 = el}
                     className={styles.projDescription}>
-                        <h6>In exhibition</h6>
+                        <h6>Grad Ex</h6>
 
                         <p>Before starting the exhibition experience, guests were encouraged to watch a short video. This acted as an introduction to the project, formally introducing each of the spaces and providing visual context to the environments that were studied. 
 

@@ -94,6 +94,7 @@
 .image2,
 .image3, 
 .image4, 
+.anonyVideo6,
 .projDescription, 
 .fullImage, 
 .col_4, 
@@ -130,7 +131,7 @@
     margin-bottom: 50px;
     margin-top: 50px;
 }
-.processContainer > div {
+/* .processContainer > div {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
 }
@@ -145,7 +146,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .5px;
-}
+} */
 
 
 @media screen and (min-width: 540px) {
@@ -198,6 +199,9 @@
     .image4 {
         grid-column: 1 / 9;
     }
+    .anonyVideo6 {
+        grid-column: 6/-1;
+    }
     .col_8_11 {
         grid-column: 2 / -2;
     }
@@ -226,6 +230,8 @@
 @media screen and (min-width: 1024px) {
     .projDescription {
         padding: 25px 50px;
+        margin-top: -125px;
+        margin-bottom: 25px;
     }
     .anony_img2 {
         grid-column: 4 / -1;

@@ -44,6 +44,11 @@ const data = {
             ogg: "/work/anony/anony_gif_4.ogg",
             webm: "/work/anony/anony_gif_4.webm"
         },
+        video6: {
+            mp4: "/work/anony/anony_gif_4.mp4",
+            ogg: "/work/anony/anony_gif_4.ogg",
+            webm: "/work/anony/anony_gif_4.webm"
+        },
         image2: "/work/anony/export1 1.png",
         process: [
             "/work/anony/Process_01.png",
@@ -108,11 +113,6 @@ const Anony = () => {
                         className={styles.image2}
                         src={'/work/anony/Horizon Sketches.png'}></img>
                     <div className={styles.processContainer}>
-                        <div>
-                            <div></div>
-                            <p>Process Photography</p>
-                            <span>2019</span>
-                        </div>
                         {
                             data.media.process.map((pro, i) =>  (
                                 <img key={i} src={pro}></img>) )
@@ -136,6 +136,14 @@ const Anony = () => {
                             webm={data.media.video3.webm}
                         />
                     </div>
+                    <div className={`${styles.anonyVideo6}`}>
+                        <VideoContainer 
+                            mp4={data.media.video6.mp4}
+                            ogg={data.media.video6.ogg}
+                            webm={data.media.video6.webm}
+                        />
+                    </div>
+
                     
                     <div className={`${styles.image4} ${styles.ipadBorder}`}>
                         <VideoContainer 
