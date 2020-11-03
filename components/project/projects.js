@@ -10,7 +10,7 @@ const Projects = [
     },
     {
         name: "VAD",
-        market: "Visual Auditory Distraction",
+        market: "Visualizing Auditory Distraction",
         scope: "Concept, Asset Acquisition, Art.",
         role: "Designer",
         year: "2017",
@@ -36,12 +36,12 @@ const Projects = [
         published: false
     },
     {
-        name: "Real Sports",
+        name: "Coterie",
         market: "Welcome to the Club",
         scope: "Brand Development, Rebranding.",
         role: "Designer",
         year: "2020",
-        link: "real-sports",
+        link: "coterie",
         published: false
     },
     {

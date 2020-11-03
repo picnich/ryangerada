@@ -19,7 +19,7 @@ const HomeBGCanvas = ({ num, isHovering }) => {
     const hoverClub320 = useRef(null)
     const hoverFrank = useRef(null)
     const hoverLPD = useRef(null)
-    const hoverRealSports = useRef(null)
+    const hoverCoterie = useRef(null)
     const hoverVAD = useRef(null)
     const hoverComingSoon = useRef(null)
 
@@ -47,9 +47,9 @@ const HomeBGCanvas = ({ num, isHovering }) => {
             ref: hoverLPD
         },
         {
-            url: "/work/realsports/hoverstate-realsports.png",
-            alt: "Real Sports Hover Image",
-            ref: hoverRealSports
+            url: "/work/coterie/hoverstate-coterie.png",
+            alt: "Coterie Hover Image",
+            ref: hoverCoterie
         },
         {
             url: "/work/vad/hoverstate-vad.png",

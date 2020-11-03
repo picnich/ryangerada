@@ -3,22 +3,22 @@ import Head from 'next/head'
 import ProjectIntro from '../../components/projectIntro/projectIntro'
 
 const data = {
-    projectName: "Real Sports",
+    projectName: "Coterie",
     market: "Welcome to the Club",
     projectNumber: "05",
     year: 2020,
-    clientName: "Real Sports",
+    clientName: "Coterie",
     role: "Lead Designer",
     description: [
         ""
     ]
 }
 
-const RealSports = () => {
+const Coterie = () => {
     return (
         <>
             <Head>
-                <title>Real Sports | Ryan Gerada</title>
+                <title>Coterie | Ryan Gerada</title>
             </Head>
             <LayoutMain>
                 <ProjectIntro 
@@ -35,4 +35,4 @@ const RealSports = () => {
     )
 }
 
-export default RealSports
+export default Coterie
