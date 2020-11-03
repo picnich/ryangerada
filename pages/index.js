@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react"
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { motion } from "framer-motion"
 
 import styles from '../styles/Home.module.css'
@@ -19,6 +20,13 @@ export default function Home() {
   useEffect(() => {
     homeTextIntro(bio1, bio2, bio3)
   })
+
+  const router = useRouter()
+
+  useEffect(() => {
+      console.log(router)
+  })
+
 
   return (
       <div className={styles.container}>
@@ -96,7 +104,6 @@ export default function Home() {
               <div className={styles.drawingWork}>
                 <img src={'/illustrations/illus_work.png'}></img>
               </div>
-
 
               <AllWork 
                 // handleMove={handleMouseLeave}
