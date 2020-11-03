@@ -3,7 +3,7 @@
 }
 .rights {
     grid-area: Rights;
-    font-size: 12px;
+    /* font-size: 12px; */
     display: flex;
     align-items: center;
 }
@@ -83,7 +83,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
             "Ryan Ryan Ryan Ryan"
-            "Rights Rights Rights Top";
+            "Rights Rights Top Top";
     }
     .toTop h6 {
         margin: 0;

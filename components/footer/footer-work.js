@@ -13,15 +13,16 @@ const FooterWork = ({ nextProject = "/" }) => {
             </div>
 
             <div className={styles.rights}>
-                <Link  href={nextProject}>
+                <Link  href={"/"}>
                     <a className={styles.toTop}>
-                        <h6>Next Work</h6>
+                        <h6>Home</h6>
                     </a>
                 </Link>
             </div>
             <Link  href={`/work/${nextProject}`}>
                 <a className={styles.nextProj}>
-                    <img src="/icons/icon-arrow-top.svg" alt="Arrow Icon"/>
+                    {/* <img src="/icons/icon-arrow-top.svg" alt="Arrow Icon"/> */}
+                    <h6>Next Work</h6>
                 </a>
             </Link>
         </footer>
