@@ -30,8 +30,8 @@ const data = {
         },
         image1: "/work/club320/fullcomp_final 1.png",
         video3: {
-            mp4: "/work/club320/cs_gif_3.mp4",
-            webm: "/work/club320/cs_gif_3.webm"
+            mp4: "/work/club320/cs_gif_3-2.mp4",
+            webm: "/work/club320/cs_gif_3-2.webm"
         },
         iphones: [
             "/work/club320/iphone-01.png",
