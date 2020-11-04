@@ -1,9 +1,21 @@
 import { useRef } from "react"
 
-const VideoContainer = ({mp4, webm, c }) => {
+const iPadContainerStyle = {
+    overflow: "hidden"
+}
+const iPadStyle = {
+    maxWidth: '102%', 
+    marginLeft: "-5px"
+}
+
+const noIpadStyle = {
+    maxWidth: "100%"
+}
+
+const VideoContainer = ({mp4, webm, c, ipad = false }) => {
     const videoRef = useRef(null);
     return (
-        <div style={{overflow: "hidden"}}>
+        <div style={ipad ? {} : iPadContainerStyle}>
             <video 
                 className={c}
                 ref={videoRef}
@@ -14,7 +26,7 @@ const VideoContainer = ({mp4, webm, c }) => {
                 data-object-fit="cover" 
                 preload="auto"
                 src={mp4}
-                style={{maxWidth: '102%', marginLeft: "-5px"}}
+                style={ipad ? noIpadStyle : iPadStyle}
             >
                 <source src={mp4} type="video/mp4" />
                 {/* <source src={ogg} type="video/ogg" /> */}

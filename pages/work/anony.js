@@ -40,8 +40,8 @@ const data = {
             webm: "/work/anony/anony_gif_4.webm"
         },
         video6: {
-            mp4: "/work/anony/anony_gif_4.mp4",
-            webm: "/work/anony/anony_gif_4.webm"
+            mp4: "/work/anony/newsprint_photo_gif.mp4",
+            webm: "/work/anony/newsprint_photo_gif.webm"
         },
         image2: "/work/anony/export1 1.png",
         process: [
@@ -86,6 +86,7 @@ const Anony = () => {
                             mp4={data.media.video1.mp4}
                             // ogg={data.media.video1.ogg}
                             webm={data.media.video1.webm}
+                            ipad
                         />
                     </div>
                     <div 
@@ -144,6 +145,7 @@ const Anony = () => {
                             mp4={data.media.video4.mp4}
                             // ogg={data.media.video4.ogg}
                             webm={data.media.video4.webm}
+                            ipad
                         />
                     </div>
                     <div className={styles.col_4}>

@@ -88,7 +88,13 @@ const data = {
                 "/work/vad/Posters/03_front.png",
                 "/work/vad/Posters/03_back.png",
             ],
-        ]
+        ],
+        downloads: {
+            process: "/work/vad/pdfs/vad_process_compressed.pdf",
+            cafe: "/work/vad/pdfs/01cafe_specbook-compressed.pdf",
+            library: "/work/vad/pdfs/02library_specbook_compressed.pdf",
+            studio: "/work/vad/pdfs/03studio_specbook-compressed.pdf",
+        }
     }
 }
 
@@ -217,6 +223,7 @@ const VisualizingAuditoryDistraction = () => {
                             mp4={data.media.video1.mp4}
                             // ogg={data.media.video1.ogg}
                             webm={data.media.video1.webm}
+                            ipad
                         />
                     </div>
                     <div 
@@ -282,6 +289,10 @@ const VisualizingAuditoryDistraction = () => {
                         vadProcess={styles.vadProcess_container}
                         vadImages={styles.vadImages_container}
                         vadDownload={styles.vadDownload_container}
+                        pdfProcess={data.media.downloads.process}
+                        pdfLibrary={data.media.downloads.library}
+                        pdfStudio={data.media.downloads.studio}
+                        pdfCafe={data.media.downloads.cafe}
                     />
 
                 </div>

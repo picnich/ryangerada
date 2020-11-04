@@ -1,4 +1,4 @@
-const VadClosing = ({ content, closingParentStyle, closingWrapperStyle, vadPoster, vadProcess, vadImages, vadDownload }) => {
+const VadClosing = ({ content, closingParentStyle, closingWrapperStyle, vadPoster, vadProcess, vadImages, vadDownload, pdfProcess, pdfStudio, pdfLibrary, pdfCafe }) => {
     return (
         <div className={closingParentStyle}>
             <div className={closingWrapperStyle}>
@@ -20,10 +20,10 @@ const VadClosing = ({ content, closingParentStyle, closingWrapperStyle, vadPoste
                 <div className={vadDownload}>
                     <div><h6>download</h6> </div>
                     <div>
-                        <a href="">Process Book</a>
-                        <a href="">01 CAFE</a>
-                        <a href="">02 LIBRARY</a>
-                        <a href="">03 STUDIO</a>
+                        <a href={pdfProcess} target="_blank">Process Book</a>
+                        <a href={pdfCafe} target="_blank">01 CAFE</a>
+                        <a href={pdfLibrary} target="_blank">02 LIBRARY</a>
+                        <a href={pdfStudio} target="_blank">03 STUDIO</a>
                     </div>
                 </div>
             </div>

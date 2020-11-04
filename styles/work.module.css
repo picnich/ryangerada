@@ -474,6 +474,7 @@
 }
 .vadDownload_container h6 {
     padding-top: 24px;
+    margin-bottom: 40px;
 }
 .vadDownload_container a {
     font-size: 30px;
@@ -528,7 +529,7 @@
         width: 100%;
     }
     .vadDownload_container {
-        display: flex;
+        margin-left: calc(50% + 20px);
     }
 }
 @media screen and (min-width: 1080px) {

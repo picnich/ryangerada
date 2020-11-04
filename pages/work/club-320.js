@@ -69,6 +69,7 @@ const ClubSpotify = () => {
                             mp4={data.media.video1.mp4}
                             // ogg={data.media.video1.ogg}
                             webm={data.media.video1.webm}
+                            ipad={true}
                         />
                     </div>
                     <div className={styles.cs_video2}>
