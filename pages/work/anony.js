@@ -21,32 +21,26 @@ const data = {
     media: {
         video1: {
             mp4: "/work/anony/anony_gif_1.mp4",
-            ogg: "/work/anony/anony_gif_1.ogg",
             webm: "/work/anony/anony_gif_1.webm"
         },
         video2: {
             mp4: "/work/anony/anonyanonymousmp4.mp4",
-            ogg: "/work/anony/anonyanonymousmp4.ogg",
             webm: "/work/anony/anonyanonymousmp4.webm"
         },
         video3: {
             mp4: "/work/anony/anony_gif_2.mp4",
-            ogg: "/work/anony/anony_gif_2.ogg",
             webm: "/work/anony/anony_gif_2.webm"
         },
         video4: {
             mp4: "/work/anony/anony_gif_3.mp4",
-            ogg: "/work/anony/anony_gif_3.ogg",
             webm: "/work/anony/anony_gif_3.webm"
         },
         video5: {
             mp4: "/work/anony/anony_gif_4.mp4",
-            ogg: "/work/anony/anony_gif_4.ogg",
             webm: "/work/anony/anony_gif_4.webm"
         },
         video6: {
             mp4: "/work/anony/anony_gif_4.mp4",
-            ogg: "/work/anony/anony_gif_4.ogg",
             webm: "/work/anony/anony_gif_4.webm"
         },
         image2: "/work/anony/export1 1.png",
@@ -90,7 +84,7 @@ const Anony = () => {
                     className={`${styles.image1} ${styles.ipadBorder}`}>
                         <VideoContainer 
                             mp4={data.media.video1.mp4}
-                            ogg={data.media.video1.ogg}
+                            // ogg={data.media.video1.ogg}
                             webm={data.media.video1.webm}
                         />
                     </div>
@@ -104,7 +98,7 @@ const Anony = () => {
                     <div className={styles.fullImage}>
                         <VideoContainer 
                             mp4={data.media.video2.mp4}
-                            ogg={data.media.video2.ogg}
+                            // ogg={data.media.video2.ogg}
                             webm={data.media.video2.webm}
                         />
                     </div>
@@ -132,14 +126,14 @@ const Anony = () => {
                     <div className={styles.col_8_11}>
                         <VideoContainer 
                             mp4={data.media.video3.mp4}
-                            ogg={data.media.video3.ogg}
+                            // ogg={data.media.video3.ogg}
                             webm={data.media.video3.webm}
                         />
                     </div>
                     <div className={`${styles.anonyVideo6}`}>
                         <VideoContainer 
                             mp4={data.media.video6.mp4}
-                            ogg={data.media.video6.ogg}
+                            // ogg={data.media.video6.ogg}
                             webm={data.media.video6.webm}
                         />
                     </div>
@@ -148,14 +142,14 @@ const Anony = () => {
                     <div className={`${styles.image4} ${styles.ipadBorder}`}>
                         <VideoContainer 
                             mp4={data.media.video4.mp4}
-                            ogg={data.media.video4.ogg}
+                            // ogg={data.media.video4.ogg}
                             webm={data.media.video4.webm}
                         />
                     </div>
                     <div className={styles.col_4}>
                         <VideoContainer 
                             mp4={data.media.video5.mp4}
-                            ogg={data.media.video5.ogg}
+                            // ogg={data.media.video5.ogg}
                             webm={data.media.video5.webm}
                         />
                     </div>

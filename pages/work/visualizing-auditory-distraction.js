@@ -46,17 +46,14 @@ const data = {
         ],
         video1: {
             mp4: "/work/vad/vad_gif_1.mp4",
-            ogg: "/work/vad/vad_gif_1.ogg",
             webm: "/work/vad/vad_gif_1.webm"
         },
         video2: {
             mp4: "/work/vad/vad_gif_2.mp4",
-            ogg: "/work/vad/vad_gif_2.ogg",
             webm: "/work/vad/vad_gif_2.webm"
         },
         video3: {
             mp4: "/work/vad/vad_gif_3.mp4",
-            ogg: "/work/vad/vad_gif_3.ogg",
             webm: "/work/vad/vad_gif_3.webm"
         },
         closing: {
@@ -218,7 +215,7 @@ const VisualizingAuditoryDistraction = () => {
                     <div className={`${styles.vad_video1} ${styles.ipadBorder}`}>
                         <VideoContainer 
                             mp4={data.media.video1.mp4}
-                            ogg={data.media.video1.ogg}
+                            // ogg={data.media.video1.ogg}
                             webm={data.media.video1.webm}
                         />
                     </div>
@@ -234,7 +231,7 @@ const VisualizingAuditoryDistraction = () => {
                     <div className={`${styles.vad_video2}`}>
                         <VideoContainer 
                             mp4={data.media.video2.mp4}
-                            ogg={data.media.video2.ogg}
+                            // ogg={data.media.video2.ogg}
                             webm={data.media.video2.webm}
                         />
                     </div>
@@ -256,7 +253,7 @@ const VisualizingAuditoryDistraction = () => {
                     <div className={`${styles.vad_video3}`}>
                         <VideoContainer 
                             mp4={data.media.video3.mp4}
-                            ogg={data.media.video3.ogg}
+                            // ogg={data.media.video3.ogg}
                             webm={data.media.video3.webm}
                         />
                     </div>

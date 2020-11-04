@@ -22,18 +22,15 @@ const data = {
     media: {
         video1: {
             mp4: "/work/club320/cs_gif_1.mp4",
-            ogg: "/work/club320/cs_gif_1.ogg",
             webm: "/work/club320/cs_gif_1.webm"
         },
         video2: {
             mp4: "/work/club320/cs_gif_2.mp4",
-            ogg: "/work/club320/cs_gif_2.ogg",
             webm: "/work/club320/cs_gif_2.webm"
         },
         image1: "/work/club320/fullcomp_final 1.png",
         video3: {
             mp4: "/work/club320/cs_gif_3.mp4",
-            ogg: "/work/club320/cs_gif_3.ogg",
             webm: "/work/club320/cs_gif_3.webm"
         },
         iphones: [
@@ -70,14 +67,14 @@ const ClubSpotify = () => {
                     <div className={`${styles.cs_video1} ${styles.ipadBorder}`}>
                         <VideoContainer 
                             mp4={data.media.video1.mp4}
-                            ogg={data.media.video1.ogg}
+                            // ogg={data.media.video1.ogg}
                             webm={data.media.video1.webm}
                         />
                     </div>
                     <div className={styles.cs_video2}>
                         <VideoContainer 
                             mp4={data.media.video2.mp4}
-                            ogg={data.media.video2.ogg}
+                            // ogg={data.media.video2.ogg}
                             webm={data.media.video2.webm}
                         />
                     </div>
@@ -87,7 +84,7 @@ const ClubSpotify = () => {
                         <img className={styles.toolbar} src={"/work/club320/chrome-toolbar.png"} />
                         <VideoContainer 
                             mp4={data.media.video3.mp4}
-                            ogg={data.media.video3.ogg}
+                            // ogg={data.media.video3.ogg}
                             webm={data.media.video3.webm}
                         />
                     </div>
