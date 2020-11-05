@@ -117,3 +117,34 @@ h6 {
   letter-spacing: 2px;
   text-transform: uppercase; 
 }
+
+
+/* Headroom */
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #f6f5f1;
+}
+.headroom--unfixed {
+  /* position: relative;
+  transform: translateY(0); */
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+

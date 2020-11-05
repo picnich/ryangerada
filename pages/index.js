@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Head from 'next/head'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import { motion } from "framer-motion"
 
 import styles from '../styles/Home.module.css'
@@ -9,6 +9,7 @@ import AllWork from '../components/project/AllWork'
 
 
 import { stagger, slideUp, transition, homeTextIntro } from "../lib/animations/animations"
+import LoadingScreen from "../components/loading"
 // import HomeBGCanvas from "../components/project/homeBgCanvas"
 
 export default function Home() {
@@ -21,11 +22,13 @@ export default function Home() {
     homeTextIntro(bio1, bio2, bio3)
   })
 
-  const router = useRouter()
+  // const router = useRouter() 
 
-  // useEffect(() => {
-  //     console.log(router)
-  // })
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 6000)
+  }, [])
 
 
   return (

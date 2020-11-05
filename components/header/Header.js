@@ -3,39 +3,9 @@ import Link from 'next/link'
 import styles from './header.module.css'
 import { motion } from "framer-motion"
 import Credentials from '../credentials'
-import useScrollPosition from '../../lib/hooks/useScrollPosition'
-import useDocumentScrollThrottled from "../../lib/hooks/useDocumentScrollThrottled"
-
-const ScrollHeader = ({ isHidden, showShadow }) => (
-    <div className={`${styles.scrollHeader} ${showShadow ? styles.shadow : ''} ${isHidden ? styles.hidden : ''}`}>Hey</div>
-)
+import Headroom from "react-headroom"
 
 const Header = ({ workPage }) => {
-    const scrollPosition = useScrollPosition();
-
-    const [shouldHideHeader, setShouldHideHeader] = useState(false);
-    const [shouldShowShadow, setShouldShowShadow] = useState(false);
-    
-    const MIN_SCROLL = 800;
-    const MINIMUM_SCROLL = 0;
-    const TIMEOUT_DELAY = 400;
-  
-    useDocumentScrollThrottled(callbackData => {
-      const { previousScrollTop, currentScrollTop } = callbackData;
-      const isScrolledDown = previousScrollTop < currentScrollTop;
-      const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
-  
-      setShouldShowShadow(currentScrollTop > 2);
-  
-      setTimeout(() => {
-        setShouldHideHeader(isScrolledDown && isMinimumScrolled);
-      }, TIMEOUT_DELAY);
-    });
-  
-    // const shadowStyle = shouldShowShadow ? 'shadow' : '';
-    // const hiddenStyle = shouldHideHeader ? 'hidden' : '';
-
-
     return (
         <>
             <motion.header 
@@ -60,15 +30,20 @@ const Header = ({ workPage }) => {
                 }
 
             </motion.header>
-            
-                {/* scrollPosition > MIN_SCROLL ? (
-                    <ScrollHeader 
-                        showShadow={shouldShowShadow} 
-                        isHidden={shouldHideHeader}
-                    />
-                ) : '' */}
-            
-            
+             
+            <Headroom disableInlineStyles wrapperStyle={{position: 'absolute'}}>
+                <div className={styles.headerContainer}>
+                    <Link href="/">
+                        <a style={{zIndex: 2}}>
+                            <img src="/RG_LOGO_ILLUS 1.png" className={styles.logo} alt="logo"/>
+                        </a>
+                    </Link>
+                    {/* <Credentials /> */}
+                </div>
+            </Headroom>
+
+
+
         </>
     )
 }
