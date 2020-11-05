@@ -9,7 +9,6 @@ import AllWork from '../components/project/AllWork'
 
 
 import { stagger, slideUp, transition, homeTextIntro } from "../lib/animations/animations"
-import LoadingScreen from "../components/loading"
 // import HomeBGCanvas from "../components/project/homeBgCanvas"
 
 export default function Home() {
@@ -24,11 +23,11 @@ export default function Home() {
 
   // const router = useRouter() 
 
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 6000)
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 6000)
+  // }, [])
 
 
   return (
