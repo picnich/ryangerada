@@ -450,6 +450,7 @@
     /* max-height: 320px; */
     min-height: 320px;
     object-fit: cover;
+    max-height: 320px;
 }
 
 
@@ -526,6 +527,7 @@
     }
     .vadProcess_container img {
         min-height: 400px;
+        max-height: none;
     }
 
     .vadProcess_container img:first-child {

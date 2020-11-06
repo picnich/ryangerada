@@ -13,6 +13,8 @@ const Footer = () => {
      let hrs = today.getHours() - 12;
      let pm = today.getHours() > 12 ? "PM" : "AM";
      let mins = today.getMinutes();
+     let singleDigits = today.getMinutes() < 10 ? '0' : '';
+     console.log(singleDigits);
  
     return (
         <footer className={styles.footer}>
@@ -21,7 +23,7 @@ const Footer = () => {
                     <img src={'/illustrations/illus_work-name.png'}></img>
                 </div>
                 {/* <h6>DESIGN, RYAN GERADA</h6> */}
-                <h6>{`LAST UPDATED: ${mo} ${d}, ${hrs}:${mins}${pm}`}</h6>
+                <h6>{`LAST UPDATED: ${mo} ${d}, ${hrs}:${singleDigits + mins}${pm}`}</h6>
             </div>
 
             <div className={styles.rights}>
