@@ -5,11 +5,13 @@ const iPadContainerStyle = {
 }
 const iPadStyle = {
     maxWidth: '102%', 
-    marginLeft: "-5px"
+    marginLeft: "-5px",
+    width: "100%"
 }
 
 const noIpadStyle = {
-    maxWidth: "100%"
+    maxWidth: "100%",
+    width: "100%"
 }
 
 const VideoContainer = ({mp4, webm, c, ipad = false }) => {

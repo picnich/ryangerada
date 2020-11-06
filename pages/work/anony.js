@@ -68,7 +68,7 @@ const Anony = () => {
             <Head>
                 <title>Anony | Ryan Gerada</title>
             </Head>
-            <LayoutMain nextProject={"club-320"}>
+            <LayoutMain nextProject={"visualizing-auditory-distraction"}>
                 <ProjectIntro 
                     project={data.projectName}
                     market={data.market}

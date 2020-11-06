@@ -53,7 +53,7 @@ const ClubSpotify = () => {
             <Head>
                 <title>Club 320 | Ryan Gerada</title>
             </Head>
-            <LayoutMain nextProject={"visualizing-auditory-distraction"}>
+            <LayoutMain nextProject={"anony"}>
                 <ProjectIntro 
                     project={data.projectName}
                     market={data.market}

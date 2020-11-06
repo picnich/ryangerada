@@ -23,9 +23,9 @@ const data = {
         "In tandem with broad research on the subject of auditory distraction, I narrowed my focus to three environments that I most frequently found myself working in. I began the process by familiarizing myself with the setting. Then I would proceed to record the 10 most reoccurring sounds in the workplace. This collected data would be utilized in a variety of deliverables. These include brand identity, digital implementation, print collateral, experience design."
     ],
     media: {
-        image1: "/work/vad/vad-image-01.png",
+        image1: "/work/vad/vad-image-03.png",
         image2: "/work/vad/vad-image-02.png",
-        image3: "/work/vad/vad-image-03.png",
+        image3: "/work/vad/vad-image-01.png",
         jimmy: [
             "/work/vad/Jimmy/vad-jimmy-01.png",
             "/work/vad/Jimmy/vad-jimmy-02.png",
@@ -112,7 +112,7 @@ const VisualizingAuditoryDistraction = () => {
             <Head>
                 <title>Visualizing Auditory Distraction | Ryan Gerada</title>
             </Head>
-            <LayoutMain nextProject="anony">
+            <LayoutMain nextProject="club-320">
                 <ProjectIntro 
                     project={data.projectName}
                     market={data.market}

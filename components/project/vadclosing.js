@@ -18,7 +18,7 @@ const VadClosing = ({ content, closingParentStyle, closingWrapperStyle, vadPoste
                     }
                 </div>
                 <div className={vadDownload}>
-                    <div><h6>download</h6> </div>
+                    <div><h6>RESOURCES</h6> </div>
                     <div>
                         <a href={pdfProcess} target="_blank">Process Book</a>
                         <a href={pdfCafe} target="_blank">01 CAFE</a>
