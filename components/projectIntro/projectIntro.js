@@ -18,7 +18,7 @@ const ProjectIntro = ({
     return (
         <section className={styles.container}>
             <div className={styles.bio}>
-                <Link  href="/#homepagework" scroll={false} passHref >
+                <Link  href="/#homepagework">
                     <a>
                         <img src="/icons/icon-arrow-top.svg" alt="Arrow Icon" className={styles.backArrow}/>    
                     </a>
