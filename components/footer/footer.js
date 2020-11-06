@@ -4,6 +4,16 @@ const Footer = () => {
     const scrollTop = () =>{
         window.scrollTo({top: 0, behavior: 'smooth'});
      };
+     const months = ["Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+     const today  = new Date();
+ 
+     let mo = months[today.getMonth() - 1];
+     // let d = week[today.getDay() - 1];
+     let d = today.getDate();
+     let hrs = today.getHours() - 12;
+     let pm = today.getHours() > 12 ? "PM" : "AM";
+     let mins = today.getMinutes();
+ 
     return (
         <footer className={styles.footer}>
             <div className={styles.byRyan}>
@@ -11,7 +21,7 @@ const Footer = () => {
                     <img src={'/illustrations/illus_work-name.png'}></img>
                 </div>
                 {/* <h6>DESIGN, RYAN GERADA</h6> */}
-                <h6>LAST UPDATED: OCT 18, 10:26PM</h6>
+                <h6>{`LAST UPDATED: ${mo} ${d}, ${hrs}:${mins}${pm}`}</h6>
             </div>
 
             <div className={styles.rights}>

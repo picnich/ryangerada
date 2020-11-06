@@ -1,3 +1,4 @@
+.secondaryHeaderContainer,
 .headerContainer {
     padding: 60px 50px;
     width: 100%;
@@ -7,6 +8,19 @@
     grid-gap: 20px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-areas: "Logo . . . . . . Links Links Links Links";
+}
+.secondaryHeaderContainer {
+    grid-template-areas: "Logo . . . . . . Num Client Client Year";
+    align-items: center;
+}
+.hNum {
+    grid-area: Num;
+}
+.hClient {
+    grid-area: Client;
+}
+.hYear {
+    grid-area: Year;
 }
 
 .logo {
@@ -58,13 +72,18 @@
     
 }
 @media screen and (max-width: 768px) {
+    .secondaryHeaderContainer,
     .headerContainer {
         padding: 25px 50px;
         grid-template-columns: repeat(8, 1fr);
         grid-template-areas: "Logo Logo . . . Links . Shop  "
     }
+    .secondaryHeaderContainer {
+        grid-template-areas: "Logo . . Num Client Year";
+    }
 }
 @media screen and (max-width: 540px) {
+    .secondaryHeaderContainer,
     .headerContainer {
         padding: 25px;
         grid-template-columns: repeat(1, 1fr);
@@ -72,6 +91,12 @@
         "Logo Links Links Links"
         ". Shop Shop Shop";
     }
+    .secondaryHeaderContainer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "Logo . Num Client"
+    }
+    .hYear { display: none }
     .logo {
         max-width: 50px;
     }

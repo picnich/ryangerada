@@ -4,10 +4,10 @@ import FooterWork from '../footer/footer-work'
 import { motion } from "framer-motion"
 // import Panels from '../panels'
 
-const LayoutMain = ({ children, nextProject, workPage = true }) => {
+const LayoutMain = ({ children, nextProject, workPage = true, hYear = false, hProjNum = false, hClient = false }) => {
     return (
         <>
-            <Header workPage={workPage} />
+            <Header workPage={workPage} hYear={hYear} hProjNum={hProjNum} hClient={hClient} />
             <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

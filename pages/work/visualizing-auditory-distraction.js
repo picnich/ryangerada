@@ -112,7 +112,12 @@ const VisualizingAuditoryDistraction = () => {
             <Head>
                 <title>Visualizing Auditory Distraction | Ryan Gerada</title>
             </Head>
-            <LayoutMain nextProject="club-320">
+            <LayoutMain 
+                nextProject="club-320"
+                hYear={data.year}
+                hProjNum={data.projectNumber}
+                hClient={data.projectName}
+            >
                 <ProjectIntro 
                     project={data.projectName}
                     market={data.market}
