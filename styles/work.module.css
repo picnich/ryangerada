@@ -29,6 +29,13 @@
         grid-gap: 250px 20px;
     }
 }
+@media screen and (min-width: 2560px) {
+    .workGrid {
+        max-width: 2560px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
 
 .ipadBorder {
     border: 10px solid #434343;

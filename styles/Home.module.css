@@ -213,6 +213,13 @@
   }
   
 }
+@media screen and (min-width: 2560px) {
+  .descriptionContainer {
+      max-width: 2560px;
+      margin-left:auto;
+      margin-right: auto;
+  }
+}
 
 
 
@@ -306,6 +313,15 @@
   
 }
 
+@media screen and (min-width: 2560px) {
+  .project {
+      max-width: 2560px;
+      margin-left:auto;
+      margin-right: auto;
+      padding: 24px 50px;
+  }
+}
+
 
 /* Drawings */
 /* .drawingBio, */
@@ -378,6 +394,11 @@
   }
 }
 
+@media screen and (min-width: 2560px) {
+  .drawingWork {
+    display: none;
+  }
+}
 
 .mask {
   width: 100%;

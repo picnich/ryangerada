@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react"
+// import { useEffect, useRef } from "react"
 import styles from "./projectIntro.module.css"
 import Link from 'next/link'
-import { homeTextIntro } from "../../lib/animations/animations"
-import RevealText from "../animated/revealText"
+// import { homeTextIntro } from "../../lib/animations/animations"
+// import RevealText from "../animated/revealText"
 
 const ProjectIntro = ({
     project, 
