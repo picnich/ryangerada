@@ -15,10 +15,7 @@ const AllWork = () => {
 
     
     const handleMouseMove = (e, i) => {
-        // console.log(e.clientX, e.clientY)
-        // setMousePos({x: e.clientX, y: e.clientY});
         setWorkNum(i);
-        // console.log(workHoverNum, "is the work hover")
         setHovering(true);
     }
     const handleMouseLeave = e => {
@@ -41,7 +38,6 @@ const AllWork = () => {
                 index={i}
                 mouseMove={handleMouseMove}
                 handleMouseLeave={handleMouseLeave}
-                // handleMouseOver={handleMouseOver}
               />
             ))}
             <HomeBGCanvas 
@@ -57,30 +53,18 @@ export default AllWork;
 
 const Project = ({ projectName, market, scope, year, role, link, mouseMove, handleMouseLeave, index, published }) => {
 
-    // const [hoverImages, setHoverImages] = useState([])
-
     const [ workRef, isVisible ] = useInView({
         threshold: .5
     })
         
     return (
-        <div
-            onMouseMove={ (e) => mouseMove(e, index) }
-            onMouseLeave={ e => handleMouseLeave(e, index) }
-            // onMouseOver={ handleMouseOver(index) }
-            // onMouseLeave={ mouseLeave}
-        >
+        <div onMouseMove={ (e) => mouseMove(e, index) } onMouseLeave={ e => handleMouseLeave(e, index) }>
         {
             published && (
                 <Link  href={link}>
                     <a className={styles.project} style={{ position: "relative",zIndex: 1}}>
                         
-                        <motion.div 
-                            className={styles.projectName} 
-                            // onHoverStart={handleHoverStart}
-                            // onHoverEnd={handleHoverEnd}
-                            // ref={containerRef}
-                        >
+                        <motion.div className={styles.projectName}>
                             <h2>{projectName} /</h2>
                             <span>{market}</span>
                         </motion.div>
@@ -94,7 +78,6 @@ const Project = ({ projectName, market, scope, year, role, link, mouseMove, hand
 
                         <motion.div
                             ref={workRef}
-                            // variants={coverGrow}
                             initial={{ width : "100%" }}
                             animate={{ width : isVisible ? "0" : "100%"}}
                             className={styles.mask}
@@ -112,12 +95,7 @@ const Project = ({ projectName, market, scope, year, role, link, mouseMove, hand
                     cursor: "no-drop"
                 }}>
                     
-                    <motion.div 
-                        className={styles.projectName} 
-                        // onHoverStart={handleHoverStart}
-                        // onHoverEnd={handleHoverEnd}
-                        // ref={containerRef}
-                    >
+                    <motion.div className={styles.projectName}>
                         <h2>{projectName} /</h2>
                         <span>{market}</span>
                     </motion.div>
@@ -131,7 +109,6 @@ const Project = ({ projectName, market, scope, year, role, link, mouseMove, hand
 
                     <motion.div
                         ref={workRef}
-                        // variants={coverGrow}
                         initial={{ width : "100%" }}
                         animate={{ width : isVisible ? "0" : "100%"}}
                         className={styles.mask}
