@@ -19,7 +19,7 @@ export default function Home() {
   // Intro Text Animation
   useEffect(() => {
     homeTextIntro(bio1, bio2, bio3)
-  })
+  }, [])
 
   // const router = useRouter() 
 

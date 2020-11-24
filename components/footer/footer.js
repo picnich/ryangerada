@@ -14,7 +14,7 @@ const Footer = () => {
      let pm = today.getHours() > 12 ? "PM" : "AM";
      let mins = today.getMinutes();
      let singleDigits = today.getMinutes() < 10 ? '0' : '';
-     console.log(singleDigits);
+    //  console.log(singleDigits);
  
     return (
         <footer className={styles.footer}>
