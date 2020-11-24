@@ -244,6 +244,7 @@
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 @media screen and (max-width: 640px) {
   .projectName {
@@ -252,6 +253,7 @@
 }
 
 .projectName h2  {
+  overflow: hidden;
   font-size: clamp(40px, 4vw, 60px);
   text-transform: uppercase;
   font-weight: 500;
@@ -267,12 +269,15 @@
 .scope {
   grid-area: Scope;
 }
+.scope * {
+  overflow: hidden;
+}
 .year {
   text-transform: uppercase;
   grid-area: Year;
   text-align: right;
   align-self: center;
-}
+} 
 .floatingImg {
   max-width: 400px;
 }
