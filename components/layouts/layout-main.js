@@ -24,7 +24,7 @@ const LayoutMain = ({ children, nextProject, workPage = true, hYear = false, hPr
             </Head>
             <Header workPage={workPage} hYear={hYear} hProjNum={hProjNum} hClient={hClient} />
             <motion.div 
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 1 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
