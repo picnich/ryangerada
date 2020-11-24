@@ -13,23 +13,11 @@ import { stagger, slideUp, transition, homeTextIntro } from "../lib/animations/a
 
 export default function Home() {
   let parent = useRef(null);
-  let bio1 = useRef(null);
-  let bio2 = useRef(null);
-  let bio3 = useRef(null);
-
+  
   // Intro Text Animation
   useEffect(() => {
     homeTextIntro(parent)
   }, [])
-
-  // const router = useRouter() 
-
-  // const [loading, setLoading] = useState(true)
-
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(false), 6000)
-  // }, [])
-
 
   return (
       <div className={styles.container}>
@@ -45,13 +33,13 @@ export default function Home() {
                 <img src={'/illus_work-bio.png'}></img>
               </div>
               <div ref={(el) => (parent = el)}>
-                <p ref={(el) => (bio1 = el)}>
+                <p>
                   Hello, my name is Ryan Gerada - I'm a designer currently working out of Toronto. I specialize in brand identity, typography and advertising. I strive to integrate creative solutions with <span>thoughtful details</span> to deliver <span>innovative work.</span> 
                 </p>
-                <p ref={(el) => (bio2 = el)}>
+                <p>
                   In 2018, I started as a designer at an agency here in Toronto where I worked with global brands like MLSE. I’ve also worked with award winning local talent in hospitality, such as Giulietta. From the outset of each project, I’ve strategically established and expanded  design language that translates across a full range of mediums. These include print, packaging design, motion and web experiences. 
                 </p>
-                <p ref={(el) => (bio3 = el)}>
+                <p>
                   Contact me for collaborations or just to say hi!
                 </p>
 
