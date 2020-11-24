@@ -277,6 +277,7 @@
   grid-area: Year;
   text-align: right;
   align-self: center;
+  overflow:hidden;
 } 
 .floatingImg {
   max-width: 400px;
