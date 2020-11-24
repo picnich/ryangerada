@@ -1,6 +1,7 @@
-// import { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import styles from "./projectIntro.module.css"
 import Link from 'next/link'
+import { homeTextIntro } from "../../lib/animations/animations";
 // import { homeTextIntro } from "../../lib/animations/animations"
 // import RevealText from "../animated/revealText"
 
@@ -14,6 +15,18 @@ const ProjectIntro = ({
     description,
     children
 }) => {
+    let descRef = useRef(null);
+    let projRef = useRef(null);
+    let marketRef = useRef(null);
+    
+    let sidebarContainerRef = useRef(null);
+
+    useEffect(() => {
+        homeTextIntro(descRef);
+        homeTextIntro(projRef);
+        homeTextIntro(marketRef);
+        homeTextIntro(sidebarContainerRef);
+    }, []) 
 
     return (
         <section className={styles.container}>
@@ -24,12 +37,12 @@ const ProjectIntro = ({
                     </a>
                 </Link>
                 <div className={styles.projectName}>
-                    <h2>{project} /</h2>
-                    <span>{market}</span>
+                    <h2 ref={el => projRef = el}>{project} /</h2>
+                    <span ref={el => marketRef = el}>{market}</span>
                 </div>
-                <div className={styles.projectDescription}>{description.map((para,i) => <p key={i}>{para}</p>)}</div>
+                <div className={styles.projectDescription} ref={el => descRef = el}>{description.map((para,i) => <p key={i}>{para}</p>)}</div>
             </div>
-            <div className={styles.credentials}>
+            <div className={styles.credentials} ref={el => sidebarContainerRef = el}>
                 <div
                     className={styles.drawingTeam}
                     style={{

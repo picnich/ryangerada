@@ -12,13 +12,14 @@ import { stagger, slideUp, transition, homeTextIntro } from "../lib/animations/a
 // import HomeBGCanvas from "../components/project/homeBgCanvas"
 
 export default function Home() {
+  let parent = useRef(null);
   let bio1 = useRef(null);
   let bio2 = useRef(null);
   let bio3 = useRef(null);
 
   // Intro Text Animation
   useEffect(() => {
-    homeTextIntro(bio1, bio2, bio3)
+    homeTextIntro(parent)
   }, [])
 
   // const router = useRouter() 
