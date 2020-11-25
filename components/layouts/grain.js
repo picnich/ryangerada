@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, memo } from "react"
 import styles from "../../styles/Grain.module.css"
 
 // Options
@@ -78,4 +78,4 @@ const Grain = () => {
     )
 }
 
-export default Grain;
+export default memo(Grain);
