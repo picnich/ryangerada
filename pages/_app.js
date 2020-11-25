@@ -42,9 +42,9 @@ const MyApp = ({Component, pageProps}) => {
     return (
       <>
       <Grain />
-      <AnimatePresence exitBeforeEnter onExitComplete={handExitComplete}>
+      {/* <AnimatePresence exitBeforeEnter onExitComplete={handExitComplete}> */}
         <Component {...pageProps} key={router.route} />
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
       </>
     );
   }
