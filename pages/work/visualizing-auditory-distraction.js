@@ -100,13 +100,13 @@ const data = {
 
 
 const VisualizingAuditoryDistraction = () => {
-    let textRef1 = useRef(null);
-    let textRef2 = useRef(null);
-    let textRef3 = useRef(null);
+    // let textRef1 = useRef(null);
+    // let textRef2 = useRef(null);
+    // let textRef3 = useRef(null);
 
-    useEffect(() => {
-       scrollerTextAnim(textRef1, textRef2, textRef3) 
-    })
+    // useEffect(() => {
+    //    scrollerTextAnim(textRef1, textRef2, textRef3) 
+    // })
     return (
         <>
             <Head>
@@ -131,7 +131,7 @@ const VisualizingAuditoryDistraction = () => {
                 <div className={styles.workGrid}>
                     <img src={data.media.image1} className={`${styles.vad_image1} ${styles.ipadBorder}`}/>
                     <div 
-                    ref={ el => textRef1 = el}
+                    // ref={ el => textRef1 = el}
                     className={styles.projDescription}>
                         <h6>01 COFFEE SHOP</h6>
 
@@ -142,7 +142,7 @@ const VisualizingAuditoryDistraction = () => {
 
                     <img src={data.media.image2} className={`${styles.vad_image2} ${styles.ipadBorder}`}/>
                     <div 
-                    ref={ el => textRef2 = el}
+                    // ref={ el => textRef2 = el}
                     className={styles.projDescription}>
                         <h6>02 REFERENCE LIBRARY.</h6>
 
@@ -154,7 +154,7 @@ const VisualizingAuditoryDistraction = () => {
                     <img src={data.media.image3} className={`${styles.vad_image3} ${styles.ipadBorder}`}/>
                     
                     <div 
-                    ref={ el => textRef3 = el}
+                    // ref={ el => textRef3 = el}
                     className={styles.projDescription}>
                         <h6>03 Home Studio</h6>
 
@@ -177,7 +177,7 @@ const VisualizingAuditoryDistraction = () => {
                         parentStyle={styles.fullwidth}
                         >
                         <div 
-                        ref={ el => textRef3 = el}
+                        // ref={ el => textRef3 = el}
                         className={styles.projDescription}>
                             <h6>01 COFFEE SHOP</h6>
 
@@ -193,7 +193,7 @@ const VisualizingAuditoryDistraction = () => {
                         parentStyle={styles.fullwidth}
                         >
                         <div 
-                        ref={ el => textRef3 = el}
+                        // ref={ el => textRef3 = el}
                         className={styles.projDescription}>
                             <h6>02 REFERENCE LIBRARY</h6>
 
@@ -209,7 +209,7 @@ const VisualizingAuditoryDistraction = () => {
                         parentStyle={styles.fullwidth}
                         >
                         <div 
-                        ref={ el => textRef3 = el}
+                        // ref={ el => textRef3 = el}
                         className={styles.projDescription}>
                             <h6>03 HOME STUDIO</h6>
 
@@ -232,7 +232,7 @@ const VisualizingAuditoryDistraction = () => {
                         />
                     </div>
                     <div 
-                    ref={ el => textRef2 = el}
+                    // ref={ el => textRef2 = el}
                     className={styles.projDescription}>
                         <h6>SPECBOOKS</h6>
 
@@ -248,7 +248,7 @@ const VisualizingAuditoryDistraction = () => {
                         />
                     </div>
                     <div 
-                    ref={ el => textRef2 = el}
+                    // ref={ el => textRef2 = el}
                     className={styles.projDescription}>
                         <h6>AUDIO LOGO POSTERS</h6>
 
@@ -274,7 +274,7 @@ const VisualizingAuditoryDistraction = () => {
                         <h6>In Exhibition</h6>
                     </div>
                     <div 
-                    ref={ el => textRef2 = el}
+                    // ref={ el => textRef2 = el}
                     className={styles.projDescription}>
                         <h6>Grad Ex</h6>
 

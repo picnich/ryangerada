@@ -43,11 +43,11 @@ const data = {
 }
 
 const ClubSpotify = () => {
-    let textRef1 = useRef(null);
+    // let textRef1 = useRef(null);
 
-    useEffect(() => {
-        scrollerTextAnim(textRef1)
-    }, [])
+    // useEffect(() => {
+    //     scrollerTextAnim(textRef1)
+    // }, [])
     return (
         <>
             <Head>
@@ -95,7 +95,7 @@ const ClubSpotify = () => {
                         />
                     </div>
                     <div 
-                    ref={ el => textRef1 = el}
+                    // ref={ el => textRef1 = el}
                     className={styles.projDescription}>
                         <h6>CLUB 320 X EVERPRESS.</h6>
 

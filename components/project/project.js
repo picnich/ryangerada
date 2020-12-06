@@ -16,7 +16,7 @@ const unPublishedStyle = {
 
 const Project = ({ projectName, market, scope, year, role, link, mouseMove, handleMouseLeave, index, published }) => {
 
-    console.log('renderrring');
+    // console.log('renderrring');
     function handleMove(e) {
         mouseMove(e, index)
     }

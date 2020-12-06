@@ -56,13 +56,13 @@ const data = {
 
 
 const Anony = () => {
-    let textRef1 = useRef(null);
-    let textRef2 = useRef(null);
+    // let textRef1 = useRef(null);
+    // let textRef2 = useRef(null);
     // let textRef3 = useRef(null);
-    useEffect(() => {
-        scrollerTextAnim(textRef1)
-        scrollerTextAnim(textRef2)
-    }, [])
+    // useEffect(() => {
+    //     scrollerTextAnim(textRef1)
+    //     scrollerTextAnim(textRef2)
+    // }, [])
     return (
         <>
             <Head>
@@ -95,7 +95,7 @@ const Anony = () => {
                         />
                     </div>
                     <div 
-                        ref={ el => textRef2 = el}
+                        // ref={ el => textRef2 = el}
                         className={styles.projDescription}>
                         <h6>Lights on, lights off</h6>
                         <p>When approaching the logo, the challenge was identifying how to meaningfully represent anonymity. The solution was what we referred to as "the gap logo" internally. Elegant in its execution, the gap communicates illumination through the exclusion of the long form word.</p>
@@ -120,7 +120,7 @@ const Anony = () => {
                     </div>
 
                     <div 
-                    ref={ el => textRef1 = el}
+                    // ref={ el => textRef1 = el}
                     className={styles.projDescription}>
                         <h6>Rethinking Instruction Manuals.</h6>
 

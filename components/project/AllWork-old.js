@@ -62,7 +62,7 @@ const ProjectOld = ({ projectName, market, scope, year, role, link, mouseMove, h
         // console.log(TitleRef);
         workProjectTitleAnim(TitleRef)
     })
-    console.log('renderrring');
+    // console.log('renderrring');
         
     return (
         <div onMouseMove={ (e) => mouseMove(e, index) } onMouseLeave={ e => handleMouseLeave(e, index) }>
