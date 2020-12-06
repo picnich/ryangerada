@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react"
 import styles from "./projectIntro.module.css"
 import Link from 'next/link'
-import { homeTextIntro } from "../../lib/animations/animations";
+import { stagger, slideUp, transition, homeTextIntro } from "../../lib/animations/animations";
+import { motion } from "framer-motion"
+
+
 // import { homeTextIntro } from "../../lib/animations/animations"
 // import RevealText from "../animated/revealText"
 
@@ -19,13 +22,13 @@ const ProjectIntro = ({
     let projRef = useRef(null);
     let marketRef = useRef(null);
     
-    let sidebarContainerRef = useRef(null);
+    // let sidebarContainerRef = useRef(null);
 
     useEffect(() => {
         homeTextIntro(descRef);
         homeTextIntro(projRef);
         homeTextIntro(marketRef);
-        homeTextIntro(sidebarContainerRef);
+        // homeTextIntro(sidebarContainerRef, true);
     }, []) 
 
     return (
@@ -42,27 +45,39 @@ const ProjectIntro = ({
                 </div>
                 <div className={styles.projectDescription} ref={el => descRef = el}>{description.map((para,i) => <p key={i}>{para}</p>)}</div>
             </div>
-            <div className={styles.credentials} ref={el => sidebarContainerRef = el}>
-                <div
+            {/* <div className={styles.credentials}> */}
+            <motion.div 
+                  className={styles.credentials}
+                  variants={stagger}
+                  initial="initial"
+                  animate="animate"
+                >
+                {/* <motion.h6 variants={slideUp} transition={{...transition, duration: 1}}></motion.h6> */}
+                <div 
                     className={styles.drawingTeam}
                     style={{
                         backgroundImage: "url(/illus_bio.png)"
                     }}
                 ></div>
-                <div className={styles.num}>{projectNumber}</div>
-                <div className={styles.credentialContainer}>
+                <motion.div
+                    variants={slideUp} transition={{...transition, duration: 1}} className={styles.num}>{projectNumber}</motion.div>
+                <motion.div
+                    variants={slideUp} transition={{...transition, duration: 1}} className={styles.credentialContainer}>
                     <h6>Year</h6>
                     <p>{year}</p>
-                </div>
-                <div className={styles.credentialContainer}>
+                </motion.div>
+                <motion.div
+                    variants={slideUp} transition={{...transition, duration: 1}} className={styles.credentialContainer}>
                     <h6>Client Name</h6>
                     <p>{clientName}</p>
-                </div>
-                <div className={styles.credentialContainer}>
+                </motion.div>
+                <motion.div
+                    variants={slideUp} transition={{...transition, duration: 1}} className={styles.credentialContainer}>
                     <h6>Role</h6>
                     <p>{role}</p>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
+            {/* </div> */}
 
         </section>
     )
